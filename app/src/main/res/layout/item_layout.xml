@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/curved_border"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:paddingStart="15dp"
+        android:id="@+id/task_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:text="Task 1"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="start"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        app:backgroundTint="#27AFFF"
+        app:icon="@drawable/baseline_edit_24"
+        app:iconSize="35dp"
+        app:iconGravity="top"
+        android:layout_marginRight="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        app:backgroundTint="#00FFFFFF"
+        app:icon="@drawable/cross_icon"
+        app:iconSize="35dp"
+        app:iconGravity="top"
+        app:iconTint="@null" />
+</LinearLayout>
